@@ -1,4 +1,4 @@
-package undergo
+package hello
 
 func Hello() string {
 	return "Hello Go!"
