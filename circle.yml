@@ -1,5 +1,0 @@
-deployment:
-  staging:
-    branch: tg-11-heroku-deployment
-    heroku:
-      appname: undergo
