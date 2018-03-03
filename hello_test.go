@@ -2,7 +2,7 @@ package undergo_test
 
 import (
 	"testing"
-	. "undergo"
+	. "github.com/stsh89/undergo"
 )
 
 func TestHello(t *testing.T) {
