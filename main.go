@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./controllers"
+	"github.com/stsh89/undergo/controllers"
 	"net/http"
 	"os"
 )
