@@ -20,6 +20,7 @@ Just another pet project.
         docker run \
           --rm -it -p 3000:3000 -v $PWD:/go/src/github.com/stsh89/undergo \
           -w /go/src/github.com/stsh89/undergo \
-          golang bash -c "export PORT=3000 && go run main.go"
+          -e PORT=3000 \
+          golang go run main.go
 
         curl localhost:3000
