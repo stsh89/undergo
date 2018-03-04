@@ -1,8 +1,8 @@
 package hello_test
 
 import (
-	"testing"
 	. "github.com/stsh89/undergo/hello"
+	"testing"
 )
 
 func TestHello(t *testing.T) {

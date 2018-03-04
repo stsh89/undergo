@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net/http"
 	"./controllers"
+	"net/http"
 	"os"
 )
 
@@ -10,5 +10,5 @@ func main() {
 	controllers.Init()
 
 	port := os.Getenv("PORT")
-	http.ListenAndServe(":" + port, nil)
+	http.ListenAndServe(":"+port, nil)
 }
