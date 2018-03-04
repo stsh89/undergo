@@ -10,7 +10,9 @@ func Init() {
 }
 
 func root() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		io.WriteString(w, "{\"payload\": {\"status\":\"success\", \"version\": 3}}")
-	})
+	http.HandleFunc("/", healthCheckHandler)
+}
+
+func healthCheckHandler(w http.ResponseWriter, r *http.Request) {
+	io.WriteString(w, `{"payload":{"status":"success","version":3}}`)
 }
